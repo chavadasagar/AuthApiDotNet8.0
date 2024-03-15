@@ -84,6 +84,50 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Tenant-Database",
+								"value": "testingdbworking",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"name\": \"string\"\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7132/api/Student/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7132",
+							"path": [
+								"api",
+								"Student",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

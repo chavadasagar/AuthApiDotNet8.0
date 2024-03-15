@@ -1,4 +1,5 @@
 using AuthApi.Auth;
+using AuthApi.Models;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<DatabaseMiddleware>();
 
 app.UseAuthorization();
 
